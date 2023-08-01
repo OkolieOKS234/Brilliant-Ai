@@ -2,7 +2,7 @@
 "use client";
 
 import { Card } from "@/components/ui/card";
-import { ArrowRight, Code, Image, MessageSquare, Music, VideoIcon } from "lucide-react";
+import { ArrowRight, Code, Image, MessageSquare, Music, StickyNoteIcon, VideoIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 
@@ -27,7 +27,7 @@ href: "/conversation"
         icon: Image,
         color: "text-pink-700",
         bgColor: "bg-pink-500/10",
-        href: "/music"
+        href: "/image"
           },
           {
             label: "Video Generation",
@@ -43,6 +43,13 @@ href: "/conversation"
                 bgColor: "bg-green-500/10",
                 href: "/code"
                   },
+                  {
+                    label: "Note Taking (Coming Soon)",
+                    icon: StickyNoteIcon,
+                    color: "text-blue-700",
+                    bgColor: "bg-blue-700/10",
+                    href: "/code"
+                      },
     ]
 
 
